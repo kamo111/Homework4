@@ -40,30 +40,35 @@ public class Main {
             System.out.println("Если возраст человека равен " + ageForStudy + ", то ему пора ходить на работу.");
         }
         //Задание 5
-        int childAge = 2;
-        boolean adult = false;
+        int childAge = 5;
         if ( childAge  < 5 ) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе.");
         }
-        else if ( childAge  > 5 && childAge < 14 && adult) {
-            System.out.println("Если возраст ребенка равен " + childAge + ", то можно кататься на аттракционе в сопровождении взрослого");
+        else {
+            System.out.println("Если больше 5 лет, то может каталься на аттракционев в присутствии взрослого.");
         }
-        else if ( childAge  > 14 ) {
+        if ( childAge  >= 5 && childAge < 14) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то можно кататься на аттракционе в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
+        }
+        else {
+            System.out.println("Если больше 14 лет, то может кататься на аттракционев, без присутствия взрослого.");
+        }
+        if ( childAge  >= 14) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то можно кататься на аттракционе без сопровождении взрослого.");
         }
         else {
-            System.out.println("Если взрослого нет, то кататься нельзя.");
+            System.out.println("Если меньше 14 лет, то может кататься на аттракционев, но только с присутствием взрослого.");
         }
         //Задание 6
         int seatingPlaces = 60;// количество занятых мест
-        int standingPlaces = 41;
+        int standingPlaces = 52;
         int freeSeatingPlaces = 60 - seatingPlaces;// количество свободных мест
         int freeStandingPlaces = 42 - standingPlaces;
         boolean capacity = 102 > (seatingPlaces + standingPlaces);
-        if ( standingPlaces < 42 && capacity) {
+        if ( standingPlaces <= 42 && capacity) {
             System.out.println("В вагоне есть " + freeStandingPlaces + " стоячих мест.");
         }
-        if ( seatingPlaces < 60 && capacity) {
+        if ( seatingPlaces <= 60 && capacity) {
             System.out.println("В вагоне есть " + freeSeatingPlaces + " сидячих мест.");
         }
         else {
