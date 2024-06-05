@@ -67,7 +67,7 @@ public class Main {
             System.out.println("В вагоне есть " + freeSeatingPlaces + " сидячих мест.");
         }
         else {
-            System.out.println("Вагон полностью забит");
+            System.out.println("Вагон полностью забит.");
         }
         //Задание 7
         int one = 23;
