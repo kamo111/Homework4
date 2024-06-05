@@ -60,20 +60,17 @@ public class Main {
             System.out.println("Если меньше 14 лет, то может кататься на аттракционев, но только с присутствием взрослого.");
         }
         //Задание 6
-        int seatingPlaces = 60;// количество занятых мест
-        int standingPlaces = 52;
-        int freeSeatingPlaces = 60 - seatingPlaces;// количество свободных мест
-        int freeStandingPlaces = 42 - standingPlaces;
-        boolean capacity = 102 > (seatingPlaces + standingPlaces);
-        if ( standingPlaces <= 42 && capacity) {
-            System.out.println("В вагоне есть " + freeStandingPlaces + " стоячих мест.");
+        int place = 22;
+        if (place  >  60 && place <= 102) {
+            System.out.println("Если место под номером " + place  +  ", то место стоячее");
         }
-        if ( seatingPlaces <= 60 && capacity) {
-            System.out.println("В вагоне есть " + freeSeatingPlaces + " сидячих мест.");
+        if (place  <= 60 && place != 0) {
+            System.out.println("Если место под номером " + place + ", то место сидячее");
         }
         else {
-            System.out.println("Вагон полностью забит.");
+            System.out.println("Если мест " + place +  ", то вагон уже полностью забит ");
         }
+
         //Задание 7
         int one = 23;
         int two = 45;
