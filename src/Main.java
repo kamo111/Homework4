@@ -40,18 +40,18 @@ public class Main {
             System.out.println("Если возраст человека равен " + ageForStudy + ", то ему пора ходить на работу.");
         }
         //Задание 5
-        int childAge = 1;
+        int childAge = 2;
         boolean adult = false;
         if ( childAge  < 5 ) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе.");
         }
-        if ( childAge  > 5 && childAge < 14 && adult) {
+        else if ( childAge  > 5 && childAge < 14 && adult) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то можно кататься на аттракционе в сопровождении взрослого");
         }
-        if ( childAge  > 14 ) {
+        else if ( childAge  > 14 ) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то можно кататься на аттракционе без сопровождении взрослого.");
         }
-        else  {
+        else {
             System.out.println("Если взрослого нет, то кататься нельзя.");
         }
         //Задание 6
